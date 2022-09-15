@@ -1,0 +1,197 @@
+{{ define "main-header" }}
+  {{ $current := . }}
+  <a href="#main-page-content-area" class="sr-only">Skip to main content</a>
+  <div id="top"></div>
+  <div class="main-navigation">
+
+
+     <nav class="d-flex  d-xl-none w-100">
+          <div class="container-fluid">
+              <div class="row justify-content-between align-items-center mobile-nav-row d-xl-none">
+                  <div class="col-auto">
+                      <a href="/" class="header-logo">
+                          <img src="/assets/images/ContractorHub-logo.svg" alt="ContractorHub logo">
+                      </a>
+                  </div>
+
+                  <div class="col-auto">
+                      <i id="open-mobile-nav" class="fas fa-bars nav-menu-toggle-btn nav-btn-open" aria-hidden="true"></i>
+                      <i id="close-mobile-nav" class="far fa-times nav-menu-toggle-btn nav-btn-close d-none" aria-hidden="true"></i>
+                  </div>
+
+
+
+              </div>
+          </div>
+      </nav>
+
+      <nav class="d-none d-xl-block">
+        <div class="container-fluid pr-0">
+          <div class="row justify-content-between align-items-center align-self-stretch  align-items-center">
+            <div class="col d-flex align-items-center px-0">
+
+                <a href="/">
+                  <img src="/assets/images/ContractorHub-logo.svg" alt="ContractorHub logo">
+                  <span class="sr-only">link back to home</span>
+                </a>
+
+
+              <ul class="ul-reset d-flex justify-content-end align-items-center">
+                <li class="nav-menu-item">
+                  <a href="/tools" class="nav-link h5-heading">Tools</a>
+                </li>
+                <li class="nav-menu-item">
+                  <a href="/blog" class="nav-link h5-heading">Blog</a>
+                </li>
+                <li class="nav-menu-item">
+                  <a href="/contractor-directory" class="nav-link h5-heading">Contractor Directory</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-auto d-flex align-items-center">
+              <div>
+                <ul class="ul-reset d-flex justify-content-end align-items-center">
+
+                  <li class="nav-menu-item">
+                    <a href="https://www.facebook.com/thecontractorhub/" target="_blank">
+                      <i class="fab fa-facebook-square"></i>
+                      <span class="sr-only">facebook social link</span>
+                    </a>
+                  </li>
+
+
+                  <li class="nav-menu-item">
+                    <a href="https://www.instagram.com/thecontractorhub/" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                      <span class="sr-only">instagram social link</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-menu-item">
+                    <a href="https://www.linkedin.com/company/contractor-hub/" target="_blank">
+                      <i class="fab fa-linkedin-in"></i>
+                      <span class="sr-only">linkedin social link</span>
+                    </a>
+                  </li>
+
+
+                  <li class="nav-menu-item">
+                    <a href="https://twitter.com/ContractorHB" target="_blank">
+                      <i class="fab fa-twitter"></i>
+                      <span class="sr-only">twitter social link</span>
+                    </a>
+                  </li>
+
+
+
+
+
+
+                </ul>
+
+              </div>
+              <div>
+                <a href="/list-your-business" class="btn-secondary text-center">Add me to the<br>contractor directory</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+          <a href="#page-main-content" class="sr-only">Skip to main content</a>
+      </nav>
+  </div>
+
+
+  <div id="mobile-nav" class="mobile-nav">
+    <div class="container pt-3 pb-5">
+      <div class="row py-5">
+        <div class="col-12 align-items-center justify-content-center px-0 pt-4">
+          <ul class="ul-reset mobile-ul mobile-nav-products-title">
+
+
+
+          <li class="mobile-nav-menu-item">
+              <a href="/tools" class="d-flex justify-content-between submenu-link w-100 py-3 align-items-center mobile-menu-news-link" role="button">
+                <div class="d-flex align-items-center">
+                  <span class="mobile-nav-menu-page h5-heading">
+                    Tools
+                  </span>
+                </div>
+                <span class="mobile-nav-triangle invisible">
+                  <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                </span>
+              </a>
+            </li>
+
+            <li class="mobile-nav-menu-item">
+                <a href="/blog" class="d-flex justify-content-between submenu-link w-100 py-3 align-items-center mobile-menu-news-link" role="button">
+                  <div class="d-flex align-items-center">
+                    <span class="mobile-nav-menu-page h5-heading">
+                      Blog
+                    </span>
+                  </div>
+                  <span class="mobile-nav-triangle invisible">
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </li>
+
+
+              <li class="mobile-nav-menu-item">
+                  <a href="/contractor-directory" class="d-flex justify-content-between submenu-link w-100 py-3 align-items-center mobile-menu-news-link" role="button">
+                    <div class="d-flex align-items-center">
+                      <span class="mobile-nav-menu-page h5-heading">
+                        Contractor Directory
+                      </span>
+                    </div>
+                    <span class="mobile-nav-triangle invisible">
+                      <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    </span>
+                  </a>
+                </li>
+
+
+
+
+
+
+          <li style="padding: 0 20px;">
+              <div class="py-3">
+                  <a href="/find-your-solution" class="btn-primary btn-size-lg">Find your solution</a>
+              </div>
+          </li>
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+{{ end }}
+
+{{ define "tools-header" }}
+{{ $current := . }}
+<a href="#main-page-content-area" class="sr-only">Skip to main content</a>
+<div id="top"></div>
+
+<div class="main-navigation-tools">
+    <nav>
+      <div class="container-fluid py-3">
+        <div class="row">
+          <div class="col">
+              <a href="/">
+                <img src="/assets/images/ContractorHub-logo-knockout-alt-01.svg" alt="ContractorHub logo">
+                <span class="sr-only">link back to home</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+        <a href="#page-main-content" class="sr-only">Skip to main content</a>
+    </nav>
+</div>
+
+{{ end }}

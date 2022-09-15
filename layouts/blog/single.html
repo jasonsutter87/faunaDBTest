@@ -1,0 +1,134 @@
+{{ define "main" }}
+<div class="blog-page">
+  {{ $page := . }}
+
+  <section class="single-blog-post-section">
+    <div class="site-container-1200">
+      <div class="row position-relative">
+        <div class="col-12">
+          <img src="{{ $page.Params.image }}" alt="{{ $page.Params.alt }}" class="w-100 header-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="site-container-1200  blog-content-area" >
+      <div class="row position-relative">
+        <div class="blog-page-content py-3 pt-lg-5">
+          <div class="col-12">
+            <h1 class="h2-heading secondary-text ">{{ $page.Title }}</h1>
+          </div>
+
+          <div class="col-12">
+
+            <p>
+              <span>
+                {{- with $page.Params.tags -}}
+                  {{- range . -}}
+                  <a class="mr-2 primary-link-alt" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">
+                    {{ . }}
+                  </a>
+                  {{- end -}}
+                {{- end -}}
+              </span>
+              <span>|</span>
+              <span>
+                {{ $page.Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
+              </span>
+            </p>
+          </div>
+
+          <div class="col-12 pt-md-4">
+              {{ $page.Content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="blog-page-section pb-5">
+    <div class="site-container-1200">
+      <div class="row related-blog-posts">
+        {{ partial "related.html" $page }}
+      </div>
+    </div>
+  </section>
+
+
+  <section class="cta-section">
+    <div class="site-container-1200">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-4 text-center">
+          <p class="h2-heading">CONTRACTOR WEBSITE SPECIAL</p>
+          <p>Contractor Websites Made Easy</p>
+          <div class="py-3">
+            <a href="https://artisancontractorwebsites.com/" class="btn-primary">Build your website</a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-8">
+          <img alt="Contractor Website Special" class="w-100" src="/assets/images/fixit-devices.jpg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script type="text/javascript">
+    setTimeout(() =>{
+      $('#scroll-to-section-btn').on('click', ()=>{
+      })
+
+      $(window).on("scroll", () => {
+        let scrollPos = window.scrollY
+        let blognav = $('#blog-nav').offset().top  - 175;
+        let mainContent = $('#main-blog-page-content').offset().top
+
+        if(window.innerWidth < 992) {
+
+          if( window.scrollY > 70 ){
+            $('#blog-nav').addClass('blog-nav-fix')
+              $('.blog-mobile-page-title').css("margin-top",  "45px")
+          }
+
+          if( $('#blog-nav').hasClass('blog-nav-fix') && window.scrollY <= 60 ) {
+            $('#blog-nav').removeClass('blog-nav-fix')
+            $('.blog-mobile-page-title').css("margin-top",  "0")
+          }
+
+        } else {
+
+          if(scrollPos > blognav) {
+            $('#blog-nav').addClass('blog-nav-fix')
+            $('.blog-page-content').css("margin-top",  "150px")
+
+            if( mainContent > scrollPos) {
+              $('#blog-nav').removeClass('blog-nav-fix')
+              $('.blog-page-content').css("margin-top",  "0")
+            }
+          }
+        }
+
+
+
+      })
+
+
+      if( window.location.href.split('/blog/').length > 1) {
+        var blogLinks = $('.blog-page-content').find('a')
+        $.each(blogLinks, (index, value) => {
+          if($(value).attr('href').split('http').length > 1 ) {
+            $(value).attr('target', '_blank')
+          }
+
+          if($(value).attr('href').split('https').length > 1 ) {
+            $(value).attr('target', '_blank')
+          }
+        })
+      }
+    }, 500)
+  </script>
+</div>
+
+{{ end }}

@@ -1,0 +1,687 @@
+{{ define "main" }}
+
+<section  id="tools-jumbtron-section">
+  <div class="site-container-1700 index-jumbtron-top-row">
+      <div class="row align-items-center">
+          <div class="col-12 text-center">
+            <h1 class="h1-heading white-text">CONTRACTOR  DIRECTORY</h1>
+          </div>
+      </div>
+  </div>
+
+  <div class="index-jumbtron-button-row">
+    <div class="site-container-1200">
+      <div class="row">
+        <div class="col button-row-border">
+          <button type="button" name="button" id="all-btn" class="tools-selections-btn tools-selections-btn-active">
+            <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            	 y="0px" viewBox="0 0 75 75" style="enable-background:new 0 0 75 75;" xml:space="preserve">
+            <g>
+            	<path class="st0" d="M64.9,26.8c0-4.5-2.8-7.3-7.4-7.3c-0.3,0-0.6,0-1,0h-0.8h-0.9h-1v-1c0-0.2,0-0.4,0-0.6c0-0.3,0-0.6,0-0.8
+            		c-0.1-4.2-3-7.1-7.2-7.1c-4.9,0-9.9,0-14.8,0s-9.9,0-14.8,0c-4.1,0-7,2.9-7,7.2c0,10.4,0,20.8,0,31.1c0,4.2,2.9,7.1,7.2,7.2
+            		c0.3,0,0.6,0,1,0H19h1h0.9l0.1,0.9c0,0.2,0,0.3,0,0.4c0,0.2,0,0.4,0,0.6c0.1,5,2.8,7.6,7.8,7.6h3.9c4,0,8,0,12,0
+            		c4.2,0,8.5,0,12.7,0c4.6,0,7.5-2.8,7.5-7.4C65,46.8,65,36.7,64.9,26.8z M21.1,52.5v0.9v1.1L20,54.4c-0.5,0-1,0-1.5-0.1
+            		c-1.1,0-2.2-0.1-3.3-0.3c-2.5-0.5-4.2-2.8-4.2-5.7c0-8.6-0.1-19.9,0-31.4c0-3.5,2.5-5.9,5.9-5.9c5.3,0,10.3,0,15.1,0
+            		c5.1,0,10.1,0,14.8,0.1c1.7,0,3.2,0.6,4.2,1.8c1.2,1.3,1.7,3.3,1.5,5.8l-0.1,0.9h-0.9h-0.9h-0.8h-0.9h-6.1c-4.8,0-9.6,0-14.3,0
+            		c-4.8,0-7.6,2.8-7.6,7.6v17.1v7.1v1.1H21.1z M63.9,57.1c0,4.6-2.3,6.8-6.9,6.8s-9.2,0-13.8,0c-4.7,0-9.4,0-14.1,0c-4.8,0-7-2.2-7-7
+            		c0-3.5,0-6.9,0-10.4V42v-4.5c0-3.5,0-6.9,0-10.4c0-4.3,2.3-6.6,6.6-6.6c4.8,0,9.6,0,14.4,0s9.5,0,14.3,0c4.2,0,6.5,2.4,6.5,6.6
+            		C63.9,37.3,63.9,47.4,63.9,57.1z"/>
+            	<path class="st0" d="M54.9,35.3c-0.2,0-0.5,0-0.6,0.1c-0.1,0-0.2,0.2-0.3,0.4c-0.1,0.1-0.2,0.2-0.3,0.3c-3.4,3.3-6.8,6.5-10.2,9.8
+            		l-2.6,2.5l-0.5,0.5l-0.5-0.5L38,46.5c-1.5-1.5-2.9-3.1-4.3-4.6c-0.4-0.4-0.7-0.6-1-0.6c-0.2,0-0.3,0.1-0.5,0.3s-0.3,0.4-0.3,0.5
+            		c0,0.3,0.2,0.6,0.6,1.1c1.1,1.2,2.2,2.4,3.3,3.6c1,1.1,2.1,2.2,3.1,3.3c0.4,0.4,0.9,0.9,1.2,0.9s0.8-0.5,1.3-0.9
+            		c4.3-4.2,8.7-8.4,13-12.5c0.1-0.1,0.3-0.3,0.4-0.4c0.3-0.2,0.6-0.5,0.7-0.7c0.1-0.4,0.1-1,0-1.1C55.5,35.4,55.3,35.3,54.9,35.3z"/>
+            </g>
+            </svg>
+
+            <span class="h4-heading d-none d-lg-block">All</span>
+          </button>
+        </div>
+
+        <div class="col button-row-border">
+          <button type="button" name="button" id="contractors-btn" class="tools-selections-btn">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            	 y="0px" viewBox="0 0 75 75" style="enable-background:new 0 0 75 75;" xml:space="preserve">
+            <path class="st0" d="M61.7,24.1H46.6v-5.9c0-0.3-0.2-0.5-0.5-0.5H29c-0.3,0-0.5,0.2-0.5,0.5v5.9H13.3c-1.8,0-3.3,1.5-3.3,3.3v9.7
+            	c0,0,0,0,0,0l0,0.1h0c0,0.3,0.2,0.5,0.5,0.5H12v16.7c0,1.7,1.4,3.1,3.1,3.1h44.8c1.7,0,3.1-1.4,3.1-3.1V37.6h1.5
+            	c0.3,0,0.5-0.2,0.5-0.5v-9.7C65,25.5,63.5,24.1,61.7,24.1z M29.5,18.7h16v5.4h-16V18.7z M59.9,56.3H15.1c-1.1,0-2-0.9-2-2V37.2h5.6
+            	v2.3c0,0.3,0.2,0.5,0.5,0.5h6.7c0,0,0,0,0,0c0.3,0,0.5-0.2,0.5-0.5l0-2.3h22.3v2.3c0,0.3,0.2,0.5,0.5,0.5h6.7c0,0,0,0,0,0
+            	c0.3,0,0.5-0.2,0.5-0.5v-2.3h5.6v0l0,17.2C61.9,55.4,61,56.3,59.9,56.3z M19.7,38.9v-3.7h5.6v3.7H19.7z M49.7,38.9v-3.7h5.6v3.7
+            	H49.7z M64,35.9h-7.6v-1.2c0-0.3-0.3-0.5-0.5-0.5h-6.7c0,0,0,0,0,0c-0.3,0-0.5,0.2-0.5,0.5l0,1.2H26.4l0-1.3c0-0.2-0.3-0.4-0.5-0.4
+            	h-6.7c0,0,0,0,0,0c-0.1,0-0.3,0.1-0.4,0.2c-0.1,0.1-0.2,0.2-0.2,0.4l0,1.2h-7.6v-8.5c0-1.2,1-2.2,2.2-2.2h48.4c1.2,0,2.2,1,2.2,2.2
+            	L64,35.9z"/>
+            </svg>
+
+            <span class="h4-heading d-none d-lg-block">Contactors</span>
+          </button>
+        </div>
+
+        <div class="col button-row-border">
+          <button type="button" name="button" id="designers-btn" class="tools-selections-btn">
+            <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            	 y="0px" viewBox="0 0 75 75" style="enable-background:new 0 0 75 75;" xml:space="preserve">
+            <g>
+            	<path class="st0" d="M61.8,39.5l1.4-0.8l-6-10.4l0.6-0.6L47.4,17.3l-0.6,0.6l-10.4-6l-0.8,1.3l-12-3.2l-0.5,1.8H10v38.6v0.7v14
+            		h53.3V50.4h-2.7l4.4-1.5L61.8,39.5z M59.6,35.2L19.2,48.8l36.2-20.9L59.6,35.2z M54.7,26.6L20,46.7l27.4-27.4L54.7,26.6z
+            		 M36.9,13.7l8.9,5.1L17.7,47L36.9,13.7z M34.9,14.4L14.4,49.9l0,0l10.3-38.3L34.9,14.4z M11.4,13.2h11.4l-10,37.2h-1.4V13.2z
+            		 M61.9,63.7H11.4V51.8h50.5V63.7z M18.8,50.4l40.7-13.6L63.2,48l-7,2.4H18.8z"/>
+            	<path class="st0" d="M15.7,60.5c1.5,0,2.8-1.3,2.8-2.8c0-1.5-1.3-2.8-2.8-2.8c-1.5,0-2.8,1.3-2.8,2.8
+            		C12.9,59.3,14.2,60.5,15.7,60.5z M15.7,56.3c0.8,0,1.4,0.6,1.4,1.4c0,0.8-0.6,1.4-1.4,1.4c-0.8,0-1.4-0.6-1.4-1.4
+            		C14.3,56.9,14.9,56.3,15.7,56.3z"/>
+            </g>
+            </svg>
+
+
+            <span class="h4-heading d-none d-lg-block">Designers</span>
+          </button>
+        </div>
+
+        <div class="col button-row-border">
+          <button type="button" name="button" id="landscapers-btn" class="tools-selections-btn">
+            <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            	 y="0px" viewBox="0 0 75 75" style="enable-background:new 0 0 75 75;" xml:space="preserve">
+            <style type="text/css">
+            	.st0{fill:#191919;}
+            </style>
+            <g>
+            	<path class="st0" d="M49.6,54.8c0,1.9,1.6,3.5,3.5,3.5c1.9,0,3.5-1.6,3.5-3.5c0-1.9-1.6-3.5-3.5-3.5C51.1,51.3,49.6,52.9,49.6,54.8
+            		z M55.3,54.8c0,1.2-1,2.2-2.2,2.2c-1.2,0-2.2-1-2.2-2.2c0-1.2,1-2.2,2.2-2.2C54.3,52.6,55.3,53.6,55.3,54.8z"/>
+            	<path class="st0" d="M57.1,23.4c-0.7-0.2-1.4-0.4-1.9-0.9c-0.1-0.1-0.2-0.2-0.3-0.3c-0.8-0.9-2.3-2.4-3.9-2.4c-1.2,0-2-0.2-3.5-3.5
+            		c-0.6-1.4-2.1-2.4-3.9-2.6c-2.7-0.3-5.6,1-7,3.1c-0.6,0.8-1.4,1.8-2.3,2.8c-2.2,2.6-4.7,5.5-5.1,8.2h-6c-1.2-3.8-2.2-7.3-3.1-10
+            		c-1.2-4.1-3.8-5.1-5.2-5.3c-2.3-0.4-4.9,0.6-6.3,2.5c-1.1,1.5-1.3,3.2-0.6,4.8l1.2-0.6c-0.7-1.5,0-2.8,0.5-3.4c1.2-1.5,3.2-2.4,5-2
+            		c1.3,0.2,3.2,1.2,4.1,4.4c3.5,11.3,11.7,38.3,11.7,38.3c0.7,2.6,3,6.1,5.5,6.1c0,0,0.1,0,0.1,0c2-0.1,3.5-2.3,4.3-6.6
+            		c1.2-6,2.3-7.7,5.5-7.7h3c-2.1,1.4-3.5,3.8-3.5,6.5c0,4.3,3.5,7.8,7.8,7.8s7.8-3.5,7.8-7.8c0-3.1-1.8-5.8-4.4-7
+            		c10.6-3.1,11.1-19.1,11.1-19.3l0-0.7h-6.7C60.8,24.5,58.6,23.8,57.1,23.4z M35.2,20.5c0.9-1.1,1.8-2.1,2.4-3
+            		c1.2-1.7,3.6-2.8,5.9-2.6c0.8,0.1,2.3,0.4,2.9,1.8c1.5,3.3,2.5,4.3,4.6,4.3c1.1,0,2.3,1.3,3,2c0.1,0.1,0.2,0.3,0.3,0.3
+            		c0.7,0.7,1.5,0.9,2.4,1.2c1.6,0.5,2.8,0.9,2.9,3.3H30.4C30.8,25.6,33.2,22.8,35.2,20.5z M39.1,55.7c-0.7,3.5-1.8,5.5-3.1,5.6
+            		c-1.6,0.1-3.6-2.7-4.3-5.1c0,0-1-3.2-2.4-7.9H42C40.4,49.8,39.7,52.4,39.1,55.7z M59.6,54.8c0,3.6-2.9,6.5-6.5,6.5
+            		s-6.5-2.9-6.5-6.5c0-3.6,2.9-6.5,6.5-6.5S59.6,51.2,59.6,54.8z M52.6,47H28.9c-1.6-5.2-3.6-11.8-5.5-17.8h42.7
+            		C65.9,32.4,64.3,47,52.6,47z"/>
+            </g>
+            </svg>
+
+            <span class="h4-heading d-none d-lg-block">Landscapers</span>
+          </button>
+        </div>
+
+        <div class="col button-row-border">
+          <button type="button" name="button" id="trades-btn" class="tools-selections-btn">
+
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            	 y="0px" viewBox="0 0 75 75" style="enable-background:new 0 0 75 75;" xml:space="preserve">
+            <g>
+            	<path class="st0" d="M66,29.7l0.8-0.8l-0.4-0.4h1v-1.2h-2.2l-1.2-1.2L63.2,27l0.4,0.4H62l-1.2-1.2L59.9,27l0.4,0.4h-1.6l-1.2-1.2
+            		L56.6,27l0.4,0.4h-1.6l-1.2-1.2L53.3,27l0.4,0.4h-1c-0.3-3.5-3.1-4.5-4.6-4.5h-3.3l-4-3.7H15c-4.1,0-7.5,3.9-7.5,8.8
+            		c0,4.6,3,8.4,6.9,8.7v19.1h12.1L26,55c-1.1-2-2.5-2.8-3.9-3.2v-5.7h2v-5.4h-2v-3.9h18.6l4-3.7h3.3h0c1.5,0,4.3-1,4.6-4.5h2.2
+            		l1.2,1.2l0.8-0.8l-0.4-0.4h1.6l1.2,1.2l0.8-0.8l-0.4-0.4h1.6l1.2,1.2l0.8-0.8l-0.4-0.4h1.6L66,29.7z M22.9,41.8v3h-0.8v-3H22.9z
+            		 M20.9,40.6v5.4v6.6l0.5,0.1c1.3,0.3,2.2,0.8,3.1,1.8h-8.9V36.7h5.4V40.6z M40.3,35.5H15c-3.5,0-6.3-3.4-6.3-7.6
+            		c0-4.2,2.8-7.6,6.3-7.6h25.3l3.6,3.4v8.5L40.3,35.5z M48,31.8h-3v-7.8H48c0.4,0,3.4,0.2,3.4,3.9C51.5,31.6,48.4,31.8,48,31.8z"/>
+            	<rect x="15" y="23.6" class="st0" width="5.6" height="1.2"/>
+            </g>
+            </svg>
+
+
+            <span class="h4-heading d-none d-lg-block">Trades</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="index-products-section">
+  <div class="site-container-1200">
+    <div class="row" id="contractors-list">
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="site-container-1200">
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-4 text-center">
+        <p class="h2-heading">CONTRACTOR WEBSITE SPECIAL</p>
+        <p>Contractor Websites Made Easy</p>
+        <div class="py-3">
+          <a href="https://artisancontractorwebsites.com/" class="btn-primary">Build your website</a>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <img alt="Contractor Website Special" class="w-100" src="/assets/images/fixit-devices.jpg">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script type="text/javascript">
+  setTimeout(() => {
+
+
+
+    let allContractors = {{ .Site.Data.contractors.contractors  }}
+
+    $.each(allContractors, (ind, val) => {
+      if(val.category == "Contractors"){
+        $('#contractors-list').append(`
+        <div class="col-12 col-lg-4 mt-4">
+          <div class="contractor-card">
+            <div class="card-header">
+              <span>
+                <img  src="/assets/images/icons/directory/contractors-icon.svg" alt="drawing of header icons" class="card-header-img">
+              </span>
+              <p class="h5-heading mb-0 d-inline-block">${val.category}</p>
+            </div>
+
+            <div class="card-body">
+              <div>
+                <p class="h4-heading">${val.name}</p>
+              </div>
+              <div>
+                <p class="mb-1">
+                  <span><i class="fal fa-phone"></i></span>
+                  <a tel="${val.phone}" class="black-link">${val.phone}</a>
+                </p>
+                <p class="mb-1">
+                  <span><i class="fal fa-envelope"></i></span>
+                  <a href="mailto:${val.email}" class="black-link">Contact Us</a>
+                </p>
+                <p class="mb-1">
+                  <span><i class="fal fa-globe"></i></span>
+                  <a href="${val.website}" class="black-link">Visit our Website</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          </div>
+        `)
+      } else if (val.category == "Designers") {
+        $('#contractors-list').append(`
+        <div class="col-12 col-lg-4 mt-4">
+          <div class="contractor-card">
+            <div class="card-header">
+              <span>
+                <img  src="/assets/images/icons/directory/designers-icon.svg" alt="drawing of header icons" class="card-header-img">
+              </span>
+              <p class="h5-heading mb-0 d-inline-block">${val.category}</p>
+            </div>
+
+            <div class="card-body">
+              <div>
+                <p class="h4-heading">${val.name}</p>
+              </div>
+              <div>
+                <p class="mb-1">
+                  <span><i class="fal fa-phone"></i></span>
+                  <a tel="${val.phone}" class="black-link">${val.phone}</a>
+                </p>
+                <p class="mb-1">
+                  <span><i class="fal fa-envelope"></i></span>
+                  <a href="mailto:${val.email}" class="black-link">Contact Us</a>
+                </p>
+                <p class="mb-1">
+                  <span><i class="fal fa-globe"></i></span>
+                  <a href="${val.website}" class="black-link">Visit our Website</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          </div>
+        `)
+      } else if(val.category == "Landscapers") {
+        $('#contractors-list').append(`
+        <div class="col-12 col-lg-4 mt-4">
+          <div class="contractor-card">
+            <div class="card-header">
+              <span>
+                <img  src="/assets/images/icons/directory/landscapers-icon.svg" alt="drawing of header icons" class="card-header-img">
+              </span>
+              <p class="h5-heading mb-0 d-inline-block">${val.category}</p>
+            </div>
+
+            <div class="card-body">
+              <div>
+                <p class="h4-heading">${val.name}</p>
+              </div>
+              <div>
+                <p class="mb-1">
+                  <span><i class="fal fa-phone"></i></span>
+                  <a tel="${val.phone}" class="black-link">${val.phone}</a>
+                </p>
+                <p class="mb-1">
+                  <span><i class="fal fa-envelope"></i></span>
+                  <a href="mailto:${val.email}" class="black-link">Contact Us</a>
+                </p>
+                <p class="mb-1">
+                  <span><i class="fal fa-globe"></i></span>
+                  <a href="${val.website}" class="black-link">Visit our Website</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          </div>
+        `)
+      }  else {
+        $('#contractors-list').append(`
+        <div class="col-12 col-lg-4 mt-4">
+          <div class="contractor-card">
+            <div class="card-header">
+              <span>
+                <img  src="/assets/images/icons/directory/trades-icon.svg" alt="drawing of header icons" class="card-header-img">
+              </span>
+              <p class="h5-heading mb-0 d-inline-block">${val.category}</p>
+            </div>
+
+            <div class="card-body">
+              <div>
+                <p class="h4-heading">${val.name}</p>
+              </div>
+              <div>
+                <p class="mb-1">
+                  <span><i class="fal fa-phone"></i></span>
+                  <a tel="${val.phone}" class="black-link">${val.phone}</a>
+                </p>
+                <p class="mb-1">
+                  <span><i class="fal fa-envelope"></i></span>
+                  <a href="mailto:${val.email}" class="black-link">Contact Us</a>
+                </p>
+                <p class="mb-1">
+                  <span><i class="fal fa-globe"></i></span>
+                  <a href="${val.website}" class="black-link">Visit our Website</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          </div>
+        `)
+      }
+    })
+
+    //click handler for tools section
+    $('#all-btn').on('click', () => {
+
+      let toolOptions = $('.tools-selections-options')
+      $.each(toolOptions, (ind, val) => {
+        if(!$(val).hasClass('d-none') ) {
+          $(val).addClass('d-none')
+        }
+      })
+
+
+      let toolSelection = $('.tools-selections-btn')
+      $.each(toolSelection, (ind, val) => {
+        if($(val).hasClass('tools-selections-btn-active') ) {
+          $(val).removeClass('tools-selections-btn-active')
+        }
+      })
+
+      $('#all-btn').addClass('tools-selections-btn-active')
+
+      $('#contractors-list').empty();
+      $.each(allContractors, (ind, val) => {
+        if(val.category == "Contractors"){
+          $('#contractors-list').append(`
+          <div class="col-12 col-lg-4 mt-4">
+            <div class="contractor-card">
+              <div class="card-header">
+                <span>
+                  <img  src="/assets/images/icons/directory/contractors-icon.svg" alt="drawing of header icons" class="card-header-img">
+                </span>
+                <p class="h5-heading mb-0 d-inline-block">${val.category}</p>
+              </div>
+
+              <div class="card-body">
+                <div>
+                  <p class="h4-heading">${val.name}</p>
+                </div>
+                <div>
+                  <p class="mb-1">
+                    <span><i class="fal fa-phone"></i></span>
+                    <a tel="${val.phone}" class="black-link">${val.phone}</a>
+                  </p>
+                  <p class="mb-1">
+                    <span><i class="fal fa-envelope"></i></span>
+                    <a href="mailto:${val.email}" class="black-link">Contact Us</a>
+                  </p>
+                  <p class="mb-1">
+                    <span><i class="fal fa-globe"></i></span>
+                    <a href="${val.website}" class="black-link">Visit our Website</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            </div>
+          `)
+        } else if (val.category == "Designers") {
+          $('#contractors-list').append(`
+          <div class="col-12 col-lg-4 mt-4">
+            <div class="contractor-card">
+              <div class="card-header">
+                <span>
+                  <img  src="/assets/images/icons/directory/designers-icon.svg" alt="drawing of header icons" class="card-header-img">
+                </span>
+                <p class="h5-heading mb-0 d-inline-block">${val.category}</p>
+              </div>
+
+              <div class="card-body">
+                <div>
+                  <p class="h4-heading">${val.name}</p>
+                </div>
+                <div>
+                  <p class="mb-1">
+                    <span><i class="fal fa-phone"></i></span>
+                    <a tel="${val.phone}" class="black-link">${val.phone}</a>
+                  </p>
+                  <p class="mb-1">
+                    <span><i class="fal fa-envelope"></i></span>
+                    <a href="mailto:${val.email}" class="black-link">Contact Us</a>
+                  </p>
+                  <p class="mb-1">
+                    <span><i class="fal fa-globe"></i></span>
+                    <a href="${val.website}" class="black-link">Visit our Website</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            </div>
+          `)
+        } else if(val.category == "Landscapers") {
+          $('#contractors-list').append(`
+          <div class="col-12 col-lg-4 mt-4">
+            <div class="contractor-card">
+              <div class="card-header">
+                <span>
+                  <img  src="/assets/images/icons/directory/landscapers-icon.svg" alt="drawing of header icons" class="card-header-img">
+                </span>
+                <p class="h5-heading mb-0 d-inline-block">${val.category}</p>
+              </div>
+
+              <div class="card-body">
+                <div>
+                  <p class="h4-heading">${val.name}</p>
+                </div>
+                <div>
+                  <p class="mb-1">
+                    <span><i class="fal fa-phone"></i></span>
+                    <a tel="${val.phone}" class="black-link">${val.phone}</a>
+                  </p>
+                  <p class="mb-1">
+                    <span><i class="fal fa-envelope"></i></span>
+                    <a href="mailto:${val.email}" class="black-link">Contact Us</a>
+                  </p>
+                  <p class="mb-1">
+                    <span><i class="fal fa-globe"></i></span>
+                    <a href="${val.website}" class="black-link">Visit our Website</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            </div>
+          `)
+        }  else {
+          $('#contractors-list').append(`
+          <div class="col-12 col-lg-4 mt-4">
+            <div class="contractor-card">
+              <div class="card-header">
+                <span>
+                  <img  src="/assets/images/icons/directory/trades-icon.svg" alt="drawing of header icons" class="card-header-img">
+                </span>
+                <p class="h5-heading mb-0 d-inline-block">${val.category}</p>
+              </div>
+
+              <div class="card-body">
+                <div>
+                  <p class="h4-heading">${val.name}</p>
+                </div>
+                <div>
+                  <p class="mb-1">
+                    <span><i class="fal fa-phone"></i></span>
+                    <a tel="${val.phone}" class="black-link">${val.phone}</a>
+                  </p>
+                  <p class="mb-1">
+                    <span><i class="fal fa-envelope"></i></span>
+                    <a href="mailto:${val.email}" class="black-link">Contact Us</a>
+                  </p>
+                  <p class="mb-1">
+                    <span><i class="fal fa-globe"></i></span>
+                    <a href="${val.website}" class="black-link">Visit our Website</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            </div>
+          `)
+        }
+      })
+
+    })
+
+    $('#contractors-btn').on('click', () => {
+
+      let toolOptions = $('.tools-selections-options')
+      $.each(toolOptions, (ind, val) => {
+        if(!$(val).hasClass('d-none') ) {
+          $(val).addClass('d-none')
+        }
+      })
+
+
+      let toolSelection = $('.tools-selections-btn')
+      $.each(toolSelection, (ind, val) => {
+        if($(val).hasClass('tools-selections-btn-active') ) {
+          $(val).removeClass('tools-selections-btn-active')
+        }
+      })
+
+
+      $('#contractors-btn').addClass('tools-selections-btn-active')
+      $('#contractors-list').empty();
+      $.each(allContractors, (ind, val) => {
+        if(val.category == "Contractors"){
+          $('#contractors-list').append(`
+          <div class="col-12 col-lg-4">
+            <div class="contractor-card">
+              <div class="card-header">
+                <span>
+                  <img  src="/assets/images/icons/directory/contractors-icon.svg" alt="drawing of header icons" class="card-header-img">
+                </span>
+                <p class="h5-heading mb-0 d-inline-block">${val.category}</p>
+              </div>
+
+              <div class="card-body">
+                <div>
+                  <p class="h4-heading">${val.name}</p>
+                </div>
+                <div>
+                  <p class="mb-1">
+                    <span><i class="fal fa-phone"></i></span>
+                    <a tel="${val.phone}" class="black-link">${val.phone}</a>
+                  </p>
+                  <p class="mb-1">
+                    <span><i class="fal fa-envelope"></i></span>
+                    <a href="mailto:${val.email}" class="black-link">Contact Us</a>
+                  </p>
+                  <p class="mb-1">
+                    <span><i class="fal fa-globe"></i></span>
+                    <a href="${val.website}" class="black-link">Visit our Website</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            </div>
+          `)
+        }
+      })
+    })
+
+    $('#designers-btn').on('click', () => {
+
+      let toolOptions = $('.tools-selections-options')
+      $.each(toolOptions, (ind, val) => {
+        if(!$(val).hasClass('d-none') ) {
+          $(val).addClass('d-none')
+        }
+      })
+
+      let toolSelection = $('.tools-selections-btn')
+      $.each(toolSelection, (ind, val) => {
+        if($(val).hasClass('tools-selections-btn-active') ) {
+          $(val).removeClass('tools-selections-btn-active')
+        }
+      })
+
+
+      $('#designers-btn').addClass('tools-selections-btn-active')
+      $('#contractors-list').empty();
+      $.each(allContractors, (ind, val) => {
+        if(val.category == "Designers"){
+          $('#contractors-list').append(`
+          <div class="col-12 col-lg-4">
+            <div class="contractor-card">
+              <div class="card-header">
+                <span>
+                  <img  src="/assets/images/icons/directory/designers-icon.svg" alt="drawing of header icons" class="card-header-img">
+                </span>
+                <p class="h5-heading mb-0 d-inline-block">${val.category}</p>
+              </div>
+
+              <div class="card-body">
+                <div>
+                  <p class="h4-heading">${val.name}</p>
+                </div>
+                <div>
+                  <p class="mb-1">
+                    <span><i class="fal fa-phone"></i></span>
+                    <a tel="${val.phone}" class="black-link">${val.phone}</a>
+                  </p>
+                  <p class="mb-1">
+                    <span><i class="fal fa-envelope"></i></span>
+                    <a href="mailto:${val.email}" class="black-link">Contact Us</a>
+                  </p>
+                  <p class="mb-1">
+                    <span><i class="fal fa-globe"></i></span>
+                    <a href="${val.website}" class="black-link">Visit our Website</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            </div>
+          `)
+        }
+      })
+    })
+
+    $('#landscapers-btn').on('click', () => {
+
+      let toolOptions = $('.tools-selections-options')
+      $.each(toolOptions, (ind, val) => {
+        if(!$(val).hasClass('d-none') ) {
+          $(val).addClass('d-none')
+        }
+      })
+
+      let toolSelection = $('.tools-selections-btn')
+      $.each(toolSelection, (ind, val) => {
+        if($(val).hasClass('tools-selections-btn-active') ) {
+          $(val).removeClass('tools-selections-btn-active')
+        }
+      })
+
+      $('#contractors-list').empty();
+      $.each(allContractors, (ind, val) => {
+        if(val.category == "Landscapers"){
+          $('#contractors-list').append(`
+          <div class="col-12 col-lg-4">
+            <div class="contractor-card">
+              <div class="card-header">
+                <span>
+                  <img  src="/assets/images/icons/directory/landscapers-icon.svg" alt="drawing of header icons" class="card-header-img">
+                </span>
+                <p class="h5-heading mb-0 d-inline-block">${val.category}</p>
+              </div>
+
+              <div class="card-body">
+                <div>
+                  <p class="h4-heading">${val.name}</p>
+                </div>
+                <div>
+                  <p class="mb-1">
+                    <span><i class="fal fa-phone"></i></span>
+                    <a tel="${val.phone}" class="black-link">${val.phone}</a>
+                  </p>
+                  <p class="mb-1">
+                    <span><i class="fal fa-envelope"></i></span>
+                    <a href="mailto:${val.email}" class="black-link">Contact Us</a>
+                  </p>
+                  <p class="mb-1">
+                    <span><i class="fal fa-globe"></i></span>
+                    <a href="${val.website}" class="black-link">Visit our Website</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            </div>
+          `)
+        }
+      })
+    })
+
+    $('#trades-btn').on('click', () => {
+
+      let toolOptions = $('.tools-selections-options')
+      $.each(toolOptions, (ind, val) => {
+        if(!$(val).hasClass('d-none') ) {
+          $(val).addClass('d-none')
+        }
+      })
+
+
+      let toolSelection = $('.tools-selections-btn')
+      $.each(toolSelection, (ind, val) => {
+        if($(val).hasClass('tools-selections-btn-active') ) {
+          $(val).removeClass('tools-selections-btn-active')
+        }
+      })
+
+      $('#contractors-list').empty();
+      $.each(allContractors, (ind, val) => {
+        if(val.category == "Trades"){
+          $('#contractors-list').append(`
+          <div class="col-12 col-lg-4">
+            <div class="contractor-card">
+              <div class="card-header">
+                <span>
+                  <img  src="/assets/images/icons/directory/trades-icon.svg" alt="drawing of header icons" class="card-header-img">
+                </span>
+                <p class="h5-heading mb-0 d-inline-block">${val.category}</p>
+              </div>
+
+              <div class="card-body">
+                <div>
+                  <p class="h4-heading">${val.name}</p>
+                </div>
+                <div>
+                  <p class="mb-1">
+                    <span><i class="fal fa-phone"></i></span>
+                    <a tel="${val.phone}" class="black-link">${val.phone}</a>
+                  </p>
+                  <p class="mb-1">
+                    <span><i class="fal fa-envelope"></i></span>
+                    <a href="mailto:${val.email}" class="black-link">Contact Us</a>
+                  </p>
+                  <p class="mb-1">
+                    <span><i class="fal fa-globe"></i></span>
+                    <a href="${val.website}" class="black-link">Visit our Website</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            </div>
+          `)
+        }
+      })
+    })
+  }, 500 )
+</script>
+
+{{ end }}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body>
+  <div id="main-container">
+
+    <main>
+    {{ if isset .Params "tools" }}
+      {{ block "tools-header" . }}
+      {{ end }}
+    {{ else }}
+      {{ block "main-header" . }}
+      {{ end }}
+    {{ end }}
+
+      {{ block "main" . }}
+      {{ end }}
+    </main>
+
+    {{ if isset .Params "tools" }}
+      {{ block "tools-footer" . }}
+      {{ end }}
+    {{ else }}
+      {{ block "main-footer" . }}
+      {{ end }}
+    {{ end }}
+    </main>
+
+    <!-- {{ partial "footer.html" . }}
+    {{ partial "foot.html" . }} -->
+
+    {{ template "_internal/google_analytics.html" . }}
+  </div>
+</body>
+</html>

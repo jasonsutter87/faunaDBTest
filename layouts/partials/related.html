@@ -1,0 +1,6 @@
+{{- $related := .Site.RegularPages.Related . -}}
+{{- with $related -}}
+      {{- range . | first 3 -}}
+              {{ .Render "card" }}
+      {{- end -}}
+{{- end -}}

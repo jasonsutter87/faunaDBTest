@@ -1,0 +1,22 @@
+
+
+{{  range first 3 .Site.RegularPages  }}
+{{ $page := . }}
+  <div class="col-12 col-lg-4 pt-4 pt-pl-0">
+        <div class="position-relative index-blog-card"  style="background-image: url( {{ $page.Params.image }} )">
+          <div class="z-15 d-flex flex-column justify-content-between h-100 text-center ">
+            <div>
+              <p class="h3-heading white-text">{{ $page.Params.title }} </p>
+            </div>
+
+            <div>
+              <a href="{{ $page.RelPermalink }}" class="btn-primary">Read</a>
+            </div>
+          </div>
+
+          <div class="screen-overlay"></div>
+
+        </div>
+
+  </div>
+  {{ end }}

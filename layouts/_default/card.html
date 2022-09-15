@@ -1,0 +1,62 @@
+{{ $page := . }}
+<div class="related-post_article col-12 col-lg-4" >
+  <div class="related-post-article-content" style="background-image: url({{ $page.Params.image }})">
+    <p class="h3-heading z-15">{{ $page.Title }}</p>
+    <a href="{{ $page.RelPermalink }}" class="btn-secondary z-15">
+      read
+    </a>
+
+    <div class="screen-overlay"></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- <div class="row">
+  <div class="col-12 col-md-6 order-2 order-md-1">
+    <div class="article_content">
+      <div class="article_content_inner">
+
+        <div class="">
+          {{- with $page.Params.tags -}}
+          <div class="tags my-3">
+            {{- range . -}}
+            <a class="mr-2 primary-link-alt" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">
+              {{ . }}
+            </a>
+            {{- end -}}
+          </div>
+          {{- end -}}
+        </div>
+
+        <h4 class="h4-heading secondary-text">
+          {{ $page.Title }}
+        </h4>
+
+
+        <div class="card-text mid-black-text d-md-none">
+            {{ $page.Summary | htmlUnescape | chomp }}
+        </div>
+
+
+        <div class="py-3">
+          <a href="{{ $page.RelPermalink }}" class="secondary-link">
+            Read More <i class="far fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-12 col-md-6 order-1 order-md-2">
+    <div class="article_image">
+    </div>
+  </div>
+</div> -->

@@ -1,0 +1,527 @@
+{{ define "main" }}
+
+  <main id="main-page-content-area">
+    <section  id="index-jumbtron-section">
+      <div class="index-form d-none d-lg-block">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-4">
+                <h2 class="primary-text">LIST YOUR BUSINESS</h2>
+                <p class="white-text">List your business on our FREE directory where thousands of customers can find your business and easily call you for a quote.</p>
+            </div>
+            <div class="col-8">
+              <div class="row">
+                <form class="d-flex" action="index.html" method="post">
+                  <div class="col-3">
+                    <div class="form-group">
+                      <label for="firstName" class="form-label sr-only">Email address</label>
+                      <input type="text" class="form-control" id="firstName" aria-describedby="firstName" placeholder="First Name">
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1" class="form-label sr-only">Last Name</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="Last Name">
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="form-group">
+                      <label for="Email" class="form-label sr-only">Email</label>
+                      <input type="email" class="form-control" id="Email" aria-describedby="Email"  placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-secondary">Submit</button>
+                    </div>
+                  </div>
+                </form>
+                </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" name="button" class="close-index-form-btn">
+          <i class="fas fa-times-circle"></i>
+          <span class="sr-only">close index form button</span>
+        </button>
+      </div>
+
+      <div class="site-container-1700 index-jumbtron-top-row">
+          <div class="row align-items-center">
+              <div class="col-12 col-md-6 text-center">
+                <h1 class="h1-heading">HELPING CONTRACTORS WIN BIG IN BUSINESS</h1>
+
+                <div class="py-4 d-none d-md-block">
+                  <a href="/tools" class="btn-primary">Get Tools to Win Big</a>
+                </div>
+              </div>
+              <div class="col-6 d-none d-md-block">
+                  <img alt="Contractor Hub | Helping Contractors Win Big in Business" src="/assets/images/contractorhub-home-marquee.svg" width="100%">
+              </div>
+          </div>
+      </div>
+
+      <div class="index-jumbtron-button-row">
+        <div class="site-container-1200">
+          <div class="row">
+            <div class="col-3 button-row-border">
+              <button type="button" name="button" id="marketing-btn" class="tools-selections-btn tools-selections-btn-active">
+
+                <svg version="1.1" id="marketing-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                	 y="0px" viewBox="0 0 75 75" style="enable-background:new 0 0 75 75;" xml:space="preserve">
+                <path class="st0" d="M62.6,10.5v0.9L32.8,24.2H11.1v1.4H7.5v18.4h3.6v1.4h2.9l1.3,4.3l1.1-0.3l4.9,15.7h13.3l-3.9-12.5h3.2l-2.2-7.1
+                	l0.8-0.2l0.4,0l0.1,0l29.7,12.8V59h4.9V10.5H62.6z M11.1,42.6H8.7V26.8h2.3V42.6z M16.4,45.3h10.8l-10,2.5L16.4,45.3z M32.9,63.8
+                	H22.2L17.6,49l9.9-2.4L32.9,63.8z M32.2,51.3h-1.9l-1.6-5l1.7-0.4L32.2,51.3z M32.7,44H12.3V25.4h20.4V44z M62.5,56.7L34.2,44.5V25
+                	l28.4-12.2V56.7z M66.2,57.7h-2.3v-46h2.3V57.7z"/>
+                </svg>
+
+                <span class="h4-heading d-none d-lg-block">Marketing</span>
+              </button>
+            </div>
+
+            <div class="col-3 button-row-border">
+              <button type="button" name="button" id="business-btn" class="tools-selections-btn">
+                <svg version="1.1" id="marketing-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                	 y="0px" viewBox="0 0 75 75" style="enable-background:new 0 0 75 75;" xml:space="preserve">
+                  <path class="st0" d="M66.3,20.9c-0.4-0.4-0.9-0.6-1.5-0.6H52.1h-0.2v-0.2v-1.3c0-1-0.4-2-1.1-2.7c-0.7-0.7-1.6-1.1-2.7-1.1h-9.3
+                  	c-0.1,0-0.2,0-0.2,0c-0.8,0-1.7,0.4-2.5,1c-0.7,0.7-1.1,1.6-1.1,2.7v1.4v0.2h-0.2H22.1c-0.6,0-1.1,0.2-1.5,0.6
+                  	c-0.3,0.3-0.5,0.9-0.5,1.4v2.3V25h-0.2H8.6c-0.4,0-0.9,0.2-1.2,0.5c-0.3,0.3-0.5,0.8-0.5,1.3v32c0,0.3,0.2,0.4,0.4,0.4h27.4
+                  	c0.3,0,0.4-0.2,0.4-0.4v-5.1v-0.2h0.2h29.4c0.6,0,1.1-0.2,1.5-0.6c0.4-0.4,0.6-0.9,0.6-1.5V22.4C66.9,21.8,66.7,21.3,66.3,20.9z
+                  	 M36,20.1v-1.3c0-0.7,0.3-1.4,0.8-2c0.5-0.5,1.3-0.9,2-0.9H48c0.7,0,1.5,0.3,2,0.8c0.5,0.5,0.8,1.3,0.8,2l0,1.3v0.2h-0.2h-0.6h-0.2
+                  	v-0.2v-1.3c0-0.4-0.2-0.9-0.5-1.2C48.9,17.2,48.5,17,48,17h-9.2c-0.4,0-0.9,0.2-1.2,0.5c-0.4,0.4-0.5,0.8-0.5,1.2v1.3v0.2h-0.2h-0.6
+                  	H36V20.1z M45.3,31.1l-3.6-0.1l-0.2,0v-0.2v-9.3v-0.2h0.2h3.6h0.2v0.2v9.3v0.3L45.3,31.1z M45.5,32.1v0.2v4.7v0.2h-0.2h-3.6h-0.2
+                  	v-0.2v-4.7v-0.2h0.2h3.6H45.5z M38.3,20.3h-0.2v-0.2v-1.3c0-0.2,0.1-0.5,0.2-0.6c0.1-0.1,0.3-0.2,0.6-0.2H48c0.2,0,0.5,0.1,0.6,0.2
+                  	c0.1,0.1,0.2,0.3,0.2,0.6v1.3v0.2h-0.2H38.3z M34.2,30.9v27.2v0.2h-0.2H8.1H7.9v-0.2V26.8c0-0.2,0.1-0.4,0.2-0.5
+                  	C8.2,26,8.5,26,8.6,26h20.7h0.2v0.2v2.6c0,0.5,0.1,0.9,0.5,1.2c0.4,0.4,0.8,0.5,1.2,0.5h2.6h0.2V30.9z M30.6,28.9v-1.6v-0.6l0.4,0.4
+                  	l2.2,2.1l0.4,0.4H33h-1.6c-0.2,0-0.4-0.1-0.5-0.2C30.6,29.2,30.6,29,30.6,28.9z M34.9,29.7l-4.5-4.6c0,0-0.1-0.1-0.1-0.1l-0.1,0h-9
+                  	H21v-0.2v-2.3c0-0.3,0.1-0.6,0.3-0.8c0.2-0.2,0.4-0.4,0.8-0.4h18.1h0.2v0.2v14.6v0.2h-0.2h-4.8h-0.2v-0.2v-5.9v-0.2
+                  	C35.1,30,35,29.8,34.9,29.7z M65.9,32.8v18.5c0,0.3-0.1,0.6-0.3,0.8c-0.2,0.2-0.5,0.3-0.8,0.3H35.5h-0.2v-0.2V37.6v-0.2h0.2h4.8h0.2
+                  	v0.2v0.2c0,0.3,0.2,0.4,0.4,0.4h5c0.3,0,0.4-0.2,0.4-0.4v-0.2v-0.2h0.2h10.5c2.6,0,5.1-1,6.9-2.9c0.5-0.5,0.9-1,1.4-1.8l0.5-0.7
+                  	V32.8z M65.9,27.7V28v0.2c-0.1,2.1-1,4.2-2.5,5.7c-1.5,1.6-3.8,2.5-6.1,2.5H46.7h-0.2v-0.2V21.5v-0.2h0.2h18.1
+                  	c0.3,0,0.6,0.1,0.8,0.3c0.2,0.2,0.3,0.5,0.3,0.8V27.7z"/>
+                  </svg>
+
+                <span class="h4-heading d-none d-lg-block">Business</span>
+              </button>
+            </div>
+
+            <div class="col-3 button-row-border">
+              <button type="button" name="button" id="sales-btn" class="tools-selections-btn">
+                <svg version="1.1" id="marketing-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                	 y="0px" viewBox="0 0 75 75" style="enable-background:new 0 0 75 75;" xml:space="preserve">
+                <g>
+                	<path class="st0" d="M35.9,26.2c-6.2,0-11.2,5-11.2,11.2c0,6.2,5,11.2,11.2,11.2c6.2,0,11.2-5.1,11.2-11.2
+                		C47.2,31.2,42.1,26.2,35.9,26.2z M35.9,47.6c-5.6,0-10.2-4.6-10.2-10.2c0-5.6,4.6-10.2,10.2-10.2c5.6,0,10.2,4.6,10.2,10.2
+                		C46.1,43,41.6,47.6,35.9,47.6z"/>
+                	<path class="st0" d="M37.1,29.8l-0.2,0v-0.5h-1.5v0.5H35c-1.8,0-3.2,1.4-3.2,3.2v1.7c0,1,0.6,1.8,1.7,2.5l0.8,0.3l0,0l1,0.4v5.5H35
+                		c-0.9,0-1.7-0.8-1.7-1.7v-0.5h-1.5v0.5c0,1.8,1.4,3.2,3.2,3.2h0.4v0.6h1.5v-0.6l0.2,0c1.7-0.1,3-1.5,3-3.2v-1.7
+                		c0-1-0.6-1.8-1.8-2.6l-0.7-0.3l0,0l-0.8-0.3v-5.6l0.3,0c0.9,0.1,1.5,0.8,1.5,1.7v0.5h1.5V33C40.1,31.3,38.8,29.9,37.1,29.8z
+                		 M35.3,36.3l-1.1-0.4c-0.6-0.4-1-0.8-1-1.2V33c0-0.9,0.8-1.7,1.7-1.7h0.4V36.3z M37.6,38.8c0.7,0.4,1,0.9,1,1.3l0,1.7
+                		c0,0.9-0.7,1.6-1.5,1.7l-0.3,0v-5L37.6,38.8z"/>
+                	<path class="st0" d="M58.4,21.5c-0.2-0.2-0.3-0.4-0.4-0.5l0-0.1c-0.3-0.4-0.6-0.7-0.8-1.1c-4.8-6.1-12-9.7-19.7-10
+                		c-0.5,0-1,0-1.5,0c-2.9,0-5.8,0.4-8.5,1.3l-0.2,0.1c-0.3,0.1-0.7,0.2-1,0.4l-0.3,0.1C15.6,15.7,8.8,25.3,8.5,36.3
+                		c0,0.2,0,0.4,0,0.7l0,0.5c0,0.4,0,0.7,0,1.1v0.1c0,0.1,0,0.1,0,0.2c0,0.2,0,0.5,0.1,0.7l0,0.4c0,0.1,0,0.3,0,0.4c0,0.1,0,0.2,0,0.3
+                		l0,0.2c0,0.3,0.1,0.7,0.1,1l0,0.1c0.4,2.3,1,4.6,2,6.7l0.2,0.4c0.1,0.1,0.1,0.3,0.2,0.4C15.3,58,23.5,63.7,33,64.8
+                		c0.1,0,0.1,0,0.2,0c0.3,0,0.7,0.1,1,0.1l0.5,0c0.2,0,0.3,0,0.5,0l0.4,0c0,0,0,0,0,0c0.1,0,0.1,0,0.2,0c0.1,0,0.2,0,0.2,0
+                		c5.8,0,11.4-1.8,16.1-5.3l0.1,0c0.3-0.3,0.7-0.5,1.2-0.9c5.7-4.5,9.3-11.2,9.9-18.4l0-0.2c0-0.4,0.1-0.8,0.1-1.1
+                		c0-0.5,0.1-1,0.1-1.5v0C63.5,31.7,61.7,26.2,58.4,21.5z M28.7,12.3c2.4-0.7,4.8-1.1,7.3-1v0c0.5,0,1,0,1.4,0
+                		c7.3,0.3,14.2,3.7,18.8,9.5l0.6,0.7l-5.6,4.1L51,25.4c-3.7-4.6-9.2-7.2-15-7.2c0,0,0,0,0,0c-1.7,0-3.4,0.2-5.1,0.7l-0.2,0l-2.1-6.6
+                		L28.7,12.3z M53.8,37.4c0,5.7-2.8,11.1-7.4,14.5c-3.1,2.2-6.7,3.4-10.5,3.4c0,0,0,0-0.1,0c-9.8,0-17.9-8-17.9-17.9
+                		c0-7.8,4.9-14.6,12.4-17c1.8-0.6,3.6-0.9,5.5-0.9c0,0,0,0,0,0c5.7,0,11.1,2.8,14.5,7.4C52.6,30,53.8,33.6,53.8,37.4z M50.6,59.1
+                		c-4.3,2.9-9.4,4.5-14.6,4.5c0,0,0,0,0,0l0,0c-0.1,0-0.2,0-0.3,0l-0.4,0c-0.1,0-0.3,0-0.4,0c-0.1,0-0.1,0-0.2,0l-0.2,0
+                		c-0.3,0-0.6,0-0.9-0.1l-0.1,0c-9.1-1-16.9-6.5-20.8-14.7c-0.1-0.2-0.1-0.3-0.2-0.5L12,48c-0.9-2-1.5-4.1-1.9-6.3l0-0.1
+                		c0-0.3-0.1-0.6-0.1-0.9l0-0.2c0-0.1,0-0.2,0-0.2c0-0.1,0-0.3,0-0.4l0-0.3c0-0.2,0-0.5-0.1-0.7l0-0.3c0-0.3,0-0.7,0-1l0-0.5
+                		c0-0.2,0-0.4,0-0.6c0.3-10.5,6.8-19.6,16.6-23.3l0.3-0.1c0.1,0,0.2-0.1,0.4-0.1l0.2-0.1l2.1,6.6l-0.2,0.1c-7.5,2.8-12.5,10-12.5,18
+                		c0,10.6,8.6,19.2,19.2,19.2c0,0,0,0,0,0c3.8,0,7.4-1.1,10.6-3.2l0.1-0.1l4.1,5.6L50.6,59.1z M62,38.9c0,0.4-0.1,0.7-0.1,1.1l0,0.1
+                		c-0.6,6.9-4,13.3-9.4,17.5c-0.2,0.1-0.4,0.3-0.5,0.4l-0.2,0.1l-4.1-5.6l0.1-0.1c4.3-3.5,7-8.6,7.2-14.2l0-0.2h6.9L62,38.9z
+                		 M61.9,36.7h-6.7l0-0.2c-0.1-3.5-1.2-6.8-3.2-9.7l-0.1-0.1l5.6-4.1l0.1,0.1c2.8,4.1,4.3,8.9,4.5,13.8l0,0.1L61.9,36.7z"/>
+                </g>
+                </svg>
+
+                <span class="h4-heading d-none d-lg-block">Sales</span>
+              </button>
+            </div>
+
+            <div class="col-3 button-row-border">
+              <button type="button" name="button" id="business-grader-btn" class="tools-selections-btn">
+                <svg version="1.1" id="marketing-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                	 y="0px" viewBox="0 0 75 75" style="enable-background:new 0 0 75 75;" xml:space="preserve">
+                <g>
+                	<path class="st0" d="M50.1,14.5H38.9v-2.6h-4.5l0,0l-0.3-0.7l0.1-0.1c0.2-0.4,0.3-0.9,0.3-1.3c0-1.8-1.5-3.3-3.3-3.3
+                		S27.9,8,27.9,9.8c0,0.4,0.1,0.9,0.3,1.3l0.1,0.1l-0.4,0.7H24v2.6h-9.8c-0.4,0-0.8,0.2-1.1,0.5c-0.3,0.4-0.5,0.8-0.5,1.1v48.9
+                		c0,0.9,0.7,1.6,1.6,1.6h36c0.9,0,1.6-0.7,1.6-1.6V16C51.8,15.1,51.1,14.5,50.1,14.5z M28.7,13l1.1-1.8c-0.3-0.4-0.5-0.9-0.5-1.4
+                		c0-1.1,1-2.1,2.1-2.1s2.1,1,2.1,2.1c0,0.4-0.1,1-0.5,1.4l1,1.8H38v5.9H25.2l0-0.1L25.1,13H28.7z M39,19.9v-1.2h8.3v42.8H17.3V18.7
+                		H24v1.2H39z M50.7,64.9c0,0.3-0.2,0.5-0.5,0.5h-36c-0.3,0-0.5-0.2-0.5-0.5V16c0-0.3,0.1-0.4,0.3-0.4l0.1-0.1h10v2.1h-7.7v45h32.1
+                		v-45H39v-2.1h11.2c0.3,0,0.5,0.2,0.5,0.5L50.7,64.9z"/>
+                	<rect x="26.2" y="29.9" class="st0" width="16.8" height="1.1"/>
+                	<rect x="26.2" y="35.8" class="st0" width="16.8" height="1.1"/>
+                	<rect x="26.2" y="41.6" class="st0" width="16.8" height="1.1"/>
+                	<rect x="26.2" y="47.6" class="st0" width="16.8" height="1.1"/>
+                	<path class="st0" d="M20.9,32.1h3.5v-3.5h-3.5V32.1z M22,29.8h1.3V31H22V29.8z"/>
+                	<path class="st0" d="M20.9,38h3.5v-3.5h-3.5V38z M22,35.6h1.3v1.3H22V35.6z"/>
+                	<path class="st0" d="M20.9,44h3.5v-3.5h-3.5V44z M22,41.6h1.3v1.3H22V41.6z"/>
+                	<path class="st0" d="M20.9,49.8h3.5v-3.5h-3.5V49.8z M22,47.5h1.3v1.3H22V47.5z"/>
+                	<path class="st0" d="M57.9,16.4h-2.1c-0.5,0-0.9,0.4-0.9,0.9V59c0,0.1,0,0.1,0,0.2l0.1,0.1l0,0.1l1.3,5.6h1.2l1.3-5.7l0.1-0.1
+                		c0,0,0-0.1,0-0.1V17.2C58.8,16.8,58.4,16.4,57.9,16.4z M57.5,59.9l-0.6,2.7l-0.6-2.8L57.5,59.9L57.5,59.9z M57.7,58.5h-1.6V23.7
+                		h1.6V58.5z M57.7,22.6h-1.6v-2h1.6V22.6z M57.7,19.3h-1.6v-1.9h1.6V19.3z"/>
+                </g>
+                </svg>
+
+                <span class="h4-heading d-none d-lg-block">Business Grader</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="index-products-section">
+      <div class="mobile-product-title-content text-center d-lg-none">
+        <h4 id="mobile-product-title" class="mb-0">Marketing</h4>
+      </div>
+
+
+      <div class="site-container-1200">
+        <div class="row text-center">
+          <div class="col-12 ">
+            <p>Put your business in the spotlight and stand out. Get the free tools to put your products and services in front of all the right people.</p>
+
+            <div class="py-3">
+              <a href="/tools" class="btn-primary">View all Tools</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row tools-selections-options pt-4" id="marketing-tools">
+          <div class="col-12 col-lg-4">
+            <div class="tool-card">
+              <p class="h4-heading primary-text">The Contractor's Ultimate Blueprint for a Website that Generates Leads</p>
+              <div class="py-3">
+                <a href="/tools/website-blueprint" class="btn-secondary">Get more leads</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-lg-4 pt-4 pt-lg-0">
+            <div class="tool-card">
+              <p class="h4-heading primary-text">How to Use Social Media as a Lead Generating Power Tool</p>
+              <div class="py-3">
+                <a href="/tools/social-media-guide" class="btn-secondary">Start Getting leads</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 pt-4 pt-lg-0">
+            <div class="tool-card">
+              <p class="h4-heading primary-text">The Blogging Plan That Brings In Business</p>
+              <div class="py-3">
+                <a href="/tools/blogging-plan" class="btn-secondary">Get more leads</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-none tools-selections-options pt-4" id="business-tools">
+
+          <div class="col-12 col-lg-4">
+            <div class="tool-card">
+              <p class="h4-heading primary-text">Contracting Business Plan Template</p>
+              <div class="py-3">
+                <a href="/tools/business-plan" class="btn-secondary">Get the Buisness plan</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 pt-4 pt-lg-0">
+            <div class="tool-card">
+              <p class="h4-heading primary-text">Invoice for Contractors Template</p>
+              <div class="py-3">
+                <a href="/tools/invoice-template" class="btn-secondary">Get The invoice</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 pt-4 pt-lg-0">
+            <div class="tool-card">
+              <p class="h4-heading primary-text">Profit & Loss Tool</p>
+              <div class="py-3">
+                <a href="/tools/profit-loss" class="btn-secondary">Get it now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-none tools-selections-options pt-4" id="sales-tools">
+          <div class="col-12 col-lg-4">
+            <div class="tool-card">
+              <p class="h4-heading primary-text">The Contractor's Ultimate Blueprint for a Website that Generates Leads</p>
+              <div class="py-3">
+                <a href="/tools/website-blueprint" class="btn-secondary">Get more leads</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 pt-4 pt-lg-0">
+            <div class="tool-card">
+              <p class="h4-heading primary-text">How to Use Social Media as a Lead Generating Power Tool</p>
+              <div class="py-3">
+                <a href="/tools/social-media-guide" class="btn-secondary">Start getting leads</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 pt-4 pt-lg-0">
+            <div class="tool-card">
+              <p class="h4-heading primary-text">The Blogging Plan That Brings In Business</p>
+              <div class="py-3">
+                <a href="/tools/blogging-plan" class="btn-secondary">get more leads</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-none tools-selections-options pt-4 justify-content-center" id="business-grader-tools">
+
+          <div class="col-12 col-lg-4">
+            <div class="tool-card">
+              <p class="h4-heading primary-text">Find Out How Your Business Ranks</p>
+              <div class="py-3">
+                <a href="/business-grader" class="btn-secondary">Grade your Buisness</a>
+              </div>
+            </div>
+          </div>
+      </div>
+
+    </section>
+
+    <section id="index-contractor-directory-section">
+      <div class="site-container-1200">
+        <div class="row text-center">
+          <div class="col-12">
+            <h2>CONTRACTOR DIRECTORY</h2>
+            <div class="py-3">
+              <a class="btn-secondary" href="/contractor-directory">View the best contractors</a>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-4">
+          <div class="col-12">
+            <div class="my-slider">
+              {{ range first 9  $.Site.Data.contractors.contractors}}
+
+              <div class="contractor-card">
+                <div class="card-header">
+                  <span>
+                    <img  alt="drawing of header icons" class="{{ .category}}-category card-header-img">
+                  </span>
+                  <p class="h5-heading mb-0 d-inline-block">{{ .category }}</p>
+                </div>
+
+                <div class="card-body">
+                  <div>
+                    <p class="h4-heading">{{ .name }}</p>
+                  </div>
+                  <div>
+                    <p class="mb-1">
+                      <span><i class="fal fa-phone"></i></span>
+                      <a tel="{{ .phone }}" class="black-link">{{ .phone }}</a>
+                    </p>
+                    <p class="mb-1">
+                      <span><i class="fal fa-envelope"></i></span>
+                      <a href="mailto:{{ .email }}" class="black-link">Contact Us</a>
+                    </p>
+                    <p class="mb-1">
+                      <span><i class="fal fa-globe"></i></span>
+                      <a href="{{ .website }}" class="black-link">Visit our Website</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="cta-section">
+      <div class="site-container-1200">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-4 text-center">
+            <p class="h2-heading">CONTRACTOR WEBSITE SPECIAL</p>
+            <p>Contractor Websites Made Easy</p>
+            <div class="py-3">
+              <a href="https://artisancontractorwebsites.com/" class="btn-primary">Build your website</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <img alt="Contractor Website Special" class="w-100" src="/assets/images/fixit-devices.jpg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="index-blog-roll-section">
+      <div class="site-container-1200">
+        <div class="row text-center">
+          <h2 class="h2-heading">CONTRACTOR BLOG</h2>
+          <div class="pt-3 py-lg-3">
+            <a class="btn-secondary" href="/blog">Stay up on the latest</a>
+          </div>
+        </div>
+
+        <div class="row pt-4">
+          {{ partial "index-blog-roll.html" . }}
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+  <script type="text/javascript">
+    setTimeout(() => {
+      // import {tns} from './src/tiny-slider.js';
+
+        var slider = tns({
+          container: '.my-slider',
+          slideBy: 'page',
+          controls: false,
+          autoplay: true,
+          edgePadding: '20',
+          mouseDrag: true,
+          nav: false,
+          responsive: {
+             640: {
+               items: 2
+             },
+             900: {
+               items: 3
+             }
+           }
+        });
+
+
+      $.each($('.card-header-img'),  (inx, val) => {
+        if($(val).hasClass('Trades-category') ) {
+          $(val).prop('src', '/assets/images/icons/directory/trades-icon.svg')
+        }
+
+        if($(val).hasClass('Contractors-category') ) {
+          $(val).prop('src', '/assets/images/icons/directory/contractors-icon.svg')
+        }
+
+        if($(val).hasClass('Designers-category') ) {
+          $(val).prop('src', '/assets/images/icons/directory/designers-icon.svg')
+        }
+
+        if($(val).hasClass('Landscapers-category') ) {
+          $(val).prop('src', '/assets/images/icons/directory/landscapers-icon.svg')
+        }
+      })
+
+
+      //click handler for tools section
+      $('#marketing-btn').on('click', () => {
+
+        let toolOptions = $('.tools-selections-options')
+        $.each(toolOptions, (ind, val) => {
+          if(!$(val).hasClass('d-none') ) {
+            $(val).addClass('d-none')
+          }
+        })
+
+
+        let toolSelection = $('.tools-selections-btn')
+        $.each(toolSelection, (ind, val) => {
+          if($(val).hasClass('tools-selections-btn-active') ) {
+            $(val).removeClass('tools-selections-btn-active')
+          }
+        })
+
+        $('#marketing-tools').removeClass('d-none')
+        $('#marketing-btn').addClass('tools-selections-btn-active')
+        $('#mobile-product-title').empty()
+        $('#mobile-product-title').html('Marketing')
+      })
+
+      $('#business-btn').on('click', () => {
+
+        let toolOptions = $('.tools-selections-options')
+        $.each(toolOptions, (ind, val) => {
+          if(!$(val).hasClass('d-none') ) {
+            $(val).addClass('d-none')
+          }
+        })
+
+        let toolSelection = $('.tools-selections-btn')
+        $.each(toolSelection, (ind, val) => {
+          if($(val).hasClass('tools-selections-btn-active') ) {
+            $(val).removeClass('tools-selections-btn-active')
+          }
+        })
+
+        $('#business-tools').removeClass('d-none')
+        $('#business-btn').addClass('tools-selections-btn-active')
+        $('#mobile-product-title').empty()
+        $('#mobile-product-title').html('Business')
+      })
+
+      $('#sales-btn').on('click', () => {
+
+        let toolOptions = $('.tools-selections-options')
+        $.each(toolOptions, (ind, val) => {
+          if(!$(val).hasClass('d-none') ) {
+            $(val).addClass('d-none')
+          }
+        })
+
+        let toolSelection = $('.tools-selections-btn')
+        $.each(toolSelection, (ind, val) => {
+          if($(val).hasClass('tools-selections-btn-active') ) {
+            $(val).removeClass('tools-selections-btn-active')
+          }
+        })
+
+        $('#sales-tools').removeClass('d-none')
+        $('#sales-btn').addClass('tools-selections-btn-active')
+        $('#mobile-product-title').empty()
+        $('#mobile-product-title').html('Sales')
+      })
+
+      $('#business-grader-btn').on('click', () => {
+
+        let toolOptions = $('.tools-selections-options')
+        $.each(toolOptions, (ind, val) => {
+          if(!$(val).hasClass('d-none') ) {
+            $(val).addClass('d-none')
+          }
+        })
+
+
+        let toolSelection = $('.tools-selections-btn')
+        $.each(toolSelection, (ind, val) => {
+          if($(val).hasClass('tools-selections-btn-active') ) {
+            $(val).removeClass('tools-selections-btn-active')
+          }
+        })
+
+        $('#business-grader-tools').removeClass('d-none')
+        $('#business-grader-btn').addClass('tools-selections-btn-active')
+        $('#mobile-product-title').empty()
+        $('#mobile-product-title').html('Business Grader')
+      })
+
+
+      $('.close-index-form-btn').on('click', () => {
+        $('.index-form').css('top', '-200px');
+        $('.index-form').css('margin-top', '-200px');
+      })
+
+    }, 500 )
+  </script>
+{{ end }}
